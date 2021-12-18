@@ -7,6 +7,6 @@ Running repoman version
 $(repoman --version)
 EOF
 
-[[ ! -d "${GITHUB_WORKSPACE}" ]] || "GITHUB_WORKSPACE not found!"
+[[ ! -d "${GITHUB_WORKSPACE}" ]] || echo "GITHUB_WORKSPACE not found!"
 
 repoman -dx full
