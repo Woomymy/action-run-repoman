@@ -5,8 +5,9 @@ set -e
 cat << EOF
 Running repoman version
 $(repoman --version)
-EOF
 
-[[ ! -d "${GITHUB_WORKSPACE}" ]] || echo "GITHUB_WORKSPACE not found!"
+Packages:
+$(ls */*)
+EOF
 
 repoman -dx full
