@@ -1,0 +1,5 @@
+name: "action-run-repoman"
+description: "Executes repoman to find QA issues on a gentoo ebuild repository"
+runs:
+  using: "docker"
+  image: "Dockerfile"
